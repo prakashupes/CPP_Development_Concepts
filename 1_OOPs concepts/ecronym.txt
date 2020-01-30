@@ -1,0 +1,3 @@
+OOPS - Object Oriented Programming. "S" in OOPS stands for "SYSTEMS" .
+In fact, there is a conference called OOPS Conference and it stands for 
+"Object Oriented Programming Language and Systems" Conference.
