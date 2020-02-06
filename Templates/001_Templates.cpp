@@ -14,7 +14,7 @@ int main()
 {
     int a=5;
     long b= 10;
-    cout<<myFun(a,b);
+    cout<<myFun(a,b); //
     //cout<<T1;
 
 }
