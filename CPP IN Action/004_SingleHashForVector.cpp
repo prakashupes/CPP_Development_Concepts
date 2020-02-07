@@ -26,14 +26,16 @@ class HashString //As we call its object/constructor then it return hash value
     void operator()(const string str)
     {
         Hash=accumulate(str.begin(),str.end(),Hash,makeHash);
+        //cout<<Hash<<" ";
 
     }
+
 
 };
 template <class T>
 uint32_t hash_genrator(T &v)
 {
-    auto finalHash=for_each(v.begin(),v.end(),HashString()); //Since for each has eturn ytyoe same as HashString so we can access
+    HashString finalHash=for_each(v.begin(),v.end(),HashString()); //Since for each has eturn ytyoe same as HashString so we can access
     finalHash.Hash;
 }
 
