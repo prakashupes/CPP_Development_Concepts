@@ -14,9 +14,10 @@ INIT acc(Iterator first,Iterator sec,INIT sum)
 }
 
 
-int myFun(int a,int b)
+int myFun(int sum,int b)
 {
-    return a*b;
+    cout<<sum<<" "<<b<<" ";
+    return sum*b;
 }
 int main()
 {
