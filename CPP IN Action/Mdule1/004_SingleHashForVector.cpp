@@ -36,7 +36,7 @@ template <class T>
 uint32_t hash_genrator(T &v)
 {
     HashString finalHash=for_each(v.begin(),v.end(),HashString()); //Since for each has eturn ytyoe same as HashString so we can access
-    finalHash.Hash;
+    finalHash.Hash; //Since HashString will make its obect only once, bcz of for_each iplementation,that's why final hash is added
 }
 
 int main()
