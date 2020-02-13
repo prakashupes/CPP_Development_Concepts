@@ -44,7 +44,10 @@ int main()
     vector<string> v={"abc","pqr"};
     uint32_t Hash=hash_genrator(v);
     cout<<Hash;
+    HashString h;
+    cout<<endl;
+    h("abc");
+    cout<<h.Hash;
 
 
 }
-

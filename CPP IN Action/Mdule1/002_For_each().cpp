@@ -9,6 +9,7 @@ Fn my_for (I first,I last,Fn fun)
     while(first!=last)
     {
         fun(*first);
+        //cout<<"Inside "<<*first<<endl;
         first++;
 
     }
