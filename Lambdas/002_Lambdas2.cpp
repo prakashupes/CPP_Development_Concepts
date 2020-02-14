@@ -2,12 +2,14 @@
 #include<vector>
 using namespace std;
 
-void call_lambda(vector<string> &v,string title)
-{
-    auto lambda =[t=title](vector<string> &v) {v.push_back(t);};
-}
+int g=10;
+auto l1= [=](){return ++g;}; //g++ and g+1 both are different
+auto l2= [g=g](){return g+1;};
+
 int main()
 {
-
+    g=20;
+    cout<<l1()<<endl;
+    cout<<l2();
 
 }
