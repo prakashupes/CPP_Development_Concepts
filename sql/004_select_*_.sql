@@ -1,7 +1,7 @@
-CREATE OR REPLACE FUNCTION print(tablename TEXT)
-RETURNS TEXT AS
+CREATE OR REPLACE FUNCTION print(tablename TEXT,OUT name TEXT, OUT one_d integer[])
+RETURNS setof record AS
 $$
-	SELECT (SELECT * FROM quote_ident(tablename));
+	SELECT tablename.name,tablename.one_d FROM $1; --quote_ident()
 $$
 LANGUAGE SQL;
 
