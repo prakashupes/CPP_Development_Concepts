@@ -15,19 +15,21 @@ class My
         *p=b;
     }
     //Shallow copy
-    /*
+   
     My(const My& m)
     {
         a=m.a;
         p=m.p;
     }
-    */
+    
+     /*
     My(const My& m)
     {
         a=m.a;
         p=new int;
         *p=*(m.p);
     }
+    */
 
 
 };
@@ -36,10 +38,18 @@ int main()
 {
     My m(2,3);
     My m2=m;
+    cout<<"For m: "<<endl;
+    cout<<m.a<<" "<<*(m.p)<<endl;
+    
+    cout<<"For m2: "<<endl;
     cout<<m2.a<<" "<<*(m2.p)<<endl;
     *(m2.p)=5;
+    
+    cout<<"For m2: "<<endl;
     cout<<m2.a<<" "<<*(m2.p)<<endl;
-    cout<<m2.a<<" "<<*(m.p)<<endl;
+    
+    cout<<"For m: "<<endl;
+    cout<<m.a<<" "<<*(m.p)<<endl;
 
 
 
