@@ -42,7 +42,9 @@ int main()
     }
 
     cout<< "\nAfter sort (fname) data is : \n";
-    stable_sort(p.begin(),p.end(),[](const Person &p1 ,const Person &p2){ return (p1.fname< p2.fname) ;});
+    stable_sort(p.begin(),p.end(),
+    [](const Person &p1 ,const Person &p2){ 
+    return (p1.fname< p2.fname) ;});
     for(auto x: p)
     {
         cout<<x.fname <<" "<<x.mname<< " "<<x.lname<<endl;
